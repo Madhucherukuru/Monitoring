@@ -1,0 +1,14 @@
+route:
+  group_by: [Alertname]
+  # Send all notifications to me.
+  receiver: email-me
+
+receivers:
+- name: email-me
+  email_configs:
+  - to: sandeep@datanowsolutions.com,madhu@datanowsolutions.com,ranjan@datanowsolutions.com
+    from: madhu@datanowsolutions.com
+    smarthost: email-smtp.us-west-2.amazonaws.com:587
+    auth_username: "AKIAUE5W3JMGR76QGWO3"
+    auth_identity: "madhu@datanowsolutions.com"
+    auth_password: "BCP5if1kDvdL3Iq9qyGzklAbfeCnKqhTbcGmgBLX3I4p"
